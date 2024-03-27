@@ -6,3 +6,6 @@ print(math.isclose(1.233, 1.4566))
 print(math.isclose(1.233, 1.233))
 print(math.isclose(1.233, 1.24))
 print(math.isclose(1.233, 1.233000001))
+
+
+assert math.isclose(1.233, 1.233000001) == True
