@@ -26,5 +26,5 @@ pto2 = Cartesiano(5,6)
 # ej: quiero imprimir "(3,4)" -> "(" + "3" + "," + "4" + ")"
 #print("("+str(pto1.x)+"," +str(pto1.y)+")") 
 
-print(pto1.aString())
+print(pto1.aString()) 
 
