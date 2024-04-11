@@ -33,6 +33,18 @@ class Lista:
 			print("x:",x)
 			aux.sgte = nodo_final
 
+	# metodo POR HACER:
+	def appendLista(self,lista):
+		aux = lista.primero
+
+		if aux != None::
+             #recorrer la lista que se nos pasa como parametro:
+			 while aux.sgte != None:
+                 aux = aux.sgte
+ 
+             aux.sgte = lista.primero
+
+
 	def imprime(self):
 		aux = self.primero
 
