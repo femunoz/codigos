@@ -50,7 +50,7 @@ class Cadena:
 
 		if n != x.largo(): return False
 
-		if n == 0: return True
+		#if n == 0: return True
 
 		aux_self = self.primero
 		aux_x = x.primero
@@ -66,7 +66,26 @@ class Cadena:
 
 
 #Retorna el carácter en la posición i 
-#	def charAt(self, i): 
+
+	def charAt(self, i):
+		n = self.largo()
+
+		if n == 0:
+			return None
+		if i>n:
+			return None
+
+		i_aux=1
+		aux = self.primero
+
+		while aux!=None:
+
+			if i_aux == i:
+				return aux.caracter
+			i_aux = i_aux +1
+			aux = aux.sgte
+		return None
+
 
 #Retorna el string correspondiente a la cadena 
 	def string(self):
@@ -96,3 +115,4 @@ print(c1.esIgual(c3))
 print(c1.esIgual(c4))
 print(c1.esIgual(c5))
 
+print(c2.charAt(3))
