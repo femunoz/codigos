@@ -9,10 +9,12 @@ class Ejemplo{
         
         double area_cuad = lado * lado;
         double r = (lado/2);
-        double area_circ = 3.14159256 * r * r ;
+        double area_circ = Math.PI * Math.pow(r,2); //3.14159256 * r * r ;
+        
 
-        U.print("area = "+(area_cuad-area_circ));
-        U.print("perimetro = "+ (4*lado+2*r*3.141592) ); 
+
+        U.println("area = "+(area_cuad-area_circ));
+        U.println("perimetro = "+ (4*lado+2*r*3.141592) ); 
     }
 
 }
